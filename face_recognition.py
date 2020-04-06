@@ -20,7 +20,7 @@ id = 0
 
 
 # Initialize and start realtime video capture
-cam = cv2.VideoCapture(1)
+cam = cv2.VideoCapture(0)
 cam.set(3, 640) # set video widht
 cam.set(4, 480) # set video height
 
@@ -52,10 +52,10 @@ while True:
         if (confidence < 100):
             l=id
             id = names[id]
-            confidence = "  {0}%".format(round(150 - confidence))
+            confidence = "  {0}%".format(round(100 - confidence))
         else:
             id = "...."
-            confidence = "  {0}%".format(round(150 - confidence))
+            confidence = "  {0}%".format(round(100 - confidence))
         
         cv2.putText(img, str(id), (x+5,y-5), font, 1, (255,255,255), 2)
         cv2.putText(img, str(confidence), (x+5,y+h-5), font, 1, (255,255,0), 1)  

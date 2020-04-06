@@ -1,21 +1,22 @@
 # facerecognitionattendance
-USING  NUMPY  TRAIN PEOPLES FACES AND USE IT FOR ATTENDANCE BY SIMPLY HITTING SPACE
+using  numpy  train peoples faces and use it for attendance by simply hitting space<br>
 
-STEPS TO USE THE PROJECT
-1 RUN THE DATASET PYTHON SCRPT
-ENSURE EACH USER HAS  A UNIQUE ID 
-ENSURE ALL THE PICTURES STORED IN THE DATASET FOLDER ARE CLEAR
-RUN THE RECONITION PYTHON SCRIPT
-HIT THE ENTER KEY TO MARK THE ATTENDANCE
+steps to use the project<br>
+1 run the dataset python scrpt<br>
+ensure each user has  a unique id <br>
+ensure all the pictures stored in the dataset folder are clear<br>
+run the reconition python script<br>
+hit the enter key to mark the attendance<br>
 
 
-NOTES
-INCASE THE SYSTEM IS NOT WORKING PROPERLY THERE COULD BE AN ISSUE WITH THE PICTURES IN THE DATASET
-HAVE A LOOK THRUGH THE PICTURES AND DELETE THE BLUR ONES 
-ALSO ENSURE THE IDS MATCH THE USER IN THE DATABASE FOLDER
-INCASE YOU MAKE ANY CHANGES IN THE DATABASE FOLDER YOU SHOULD RUN THE TRANING SCRIPT IN THE TRAINER FOLDER
-AVOID USING SPECTABCLES OR CAPS WHILE TRANING .
-AVOID MOVING AROUND WHILE TRANNING
-ILL BE HAPPY TO HELP ON ANY ISSUES JUST LEAVE A COMMENT .
-THANKS
+Notes<br>
+Incase the system is not detecting properly there could be an issue with the pictures in the dataset have a look thrugh the pictures and delete the blur ones <br>
+Also ensure the ids match the user in the database folder<br>
+Avoid using spectacles or caps while traning .<br>
+Avoid moving around while tranning<br>
+Ensure camera focuses on the face properly<br>
 
+
+Incase of this eroror<br>
+module 'cv2.cv2' has no attribute 'face'<br>
+RUN:pip install opencv-contrib-python<br>
