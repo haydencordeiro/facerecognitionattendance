@@ -64,15 +64,15 @@ while(True):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_detector.detectMultiScale(gray, 1.3, 5)
     for (x,y,w,h) in faces:
-        
         cv2.rectangle(img, (x,y), (x+w,y+h), (255,0,0), 2)     
         count += 1
+        print(count)
 
         # Save the captured image into the datasets folder
         cv2.imwrite("dataset/User." + str(face_id) + '.' + str(count) + ".jpg", gray[y:y+h,x:x+w])
         cv2.imshow('image', img)
 
-    k = cv2.waitKey(1) & 0xff 
+    k = cv2.waitKey(1) & 0xff
     if k == 27:# Press 'ESC' for exiting video
         break
     elif count >= 15: # Take 30 face sample and stop video
@@ -88,7 +88,7 @@ while(True):
 
 
 fo=open("names.txt","a")
-fo.write("\n"+input("enter your name:"))
+fo.write(input("enter your name:")+"\n")
 fo.close()
 print("\n [INFO] Exiting Program ")
 cam.release()
