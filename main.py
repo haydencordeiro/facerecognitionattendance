@@ -95,7 +95,7 @@ def Capture(rollNo,Name):
         k = cv2.waitKey(1) & 0xff
         if k == 27:# Press 'ESC' for exiting video
             break
-        elif count >= 15: # Take 30 face sample and stop video
+        elif count >= 50: # Take 50 face sample and stop video
             break
 
 
