@@ -21,4 +21,4 @@ Ensure camera focuses on the face properly<br>
 
 Incase of this eroror<br>
 module 'cv2.cv2' has no attribute 'face'<br>
-RUN:pip install opencv-contrib-python<br>
+RUN:pip install --force-reinstall opencv-contrib-python==4.1.2.30
